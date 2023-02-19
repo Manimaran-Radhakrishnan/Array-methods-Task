@@ -36,7 +36,7 @@ var request = new XMLHttpRequest;
   var data = request.response;
   var result = JSON.parse(data);
    var ans = result.forEach((ele)=>console.log("NAME:"+ele.name.common+",.","CAPITAL:"+ele.capital+",.","FLAG:"+ele.flag+"."))
-        }
+        };
 
 
 
@@ -51,7 +51,7 @@ request.onload=function(){
   var ans = result.filter((element)=>element.population<200000)
   var ans1 = ans.map((element)=>element.name.common)
   console.log(`The countries with a population of less than 2 lakhs : ${ans1}`)
-}
+};
 
 // Print the country which uses US Dollars as currency.
 
